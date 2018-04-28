@@ -64,28 +64,15 @@ Below we present the main results achieved when using
 
 ### DogCentric Dataset
 
-![DOG_V3-RGB](images/DOG_V3-RGB.png)
-![DOG_V3-OFL](images/DOG_V3-OFL.png)
-![DOG_V3-FC-LRCN](images/DOG_V3-FC-LRCN.png)
-![DOG_V3-CONV-LRCN](images/DOG_V3-CONV-LRCN.png)
-![DOG_VGG16-FC-LRCN](images/DOG_VGG16-FC-LRCN.png)
-![DOG_VGG16-CONV-LRCN](images/DOG_VGG16-CONV-LRCN.png)
+To see tables and plots containing the results achieved using the DogCentric dataset, click [here](results_dog.md).
 
 ### KSCGR
 
-![KSCGR_V3-RGB](images/KSCGR_V3-RGB.png)
-![KSCGR_V3-OFL](images/KSCGR_V3-OFL.png)
-![KSCGR_V3-FC-LRCN](images/KSCGR_V3-FC-LRCN.png)
-![KSCGR_V3-CONV-LRCN](images/KSCGR_V3-CONV-LRCN.png)
-![KSCGR_VGG16-CONV-LRCN](images/KSCGR_VGG16-CONV-LRCN.png)
+To see tables and plots containing the results achieved using the DogCentric dataset, click [here](results_kscgr.md).
 
 ### UCF-11 
 
-![UCF11_V3-RGB](images/UCF11_V3-RGB.png)
-![UCF11_V3-OFL](images/UCF11_V3-OFL.png)
-![UCF11_V3-FC-LRCN](images/UCF11_V3-FC-LRCN.png)
-![UCF11_V3-CONV-LRCN](images/UCF11_V3-CONV-LRCN.png)
-![UCF11_VGG16-CONV-LRCN](images/UCF11_VGG16-CONV-LRCN.png)
+To see tables and plots containing the results achieved using the DogCentric dataset, click [here](results_ucf11.md).
 
 
 
