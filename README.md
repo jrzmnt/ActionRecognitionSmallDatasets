@@ -35,6 +35,8 @@ In this work we tested serveral deep networks configurations. The names used in 
 | VGG16&#x2011;2STREAM(MEAN)   | Two-stream architecture that uses an VGG-16 fed with raw RGB and optical flow image data with the fusion layer using the mean of the features of both streams.                |
 
 
+
+
 ---
 ## Experiments
 
@@ -52,12 +54,40 @@ The Kitchen Scene Context based Gesture Recognition dataset ([KSCGR](http://www.
 
 UCF YouTube Action Dataset ([UCF-11](http://crcv.ucf.edu/data/UCF_YouTube_Action.php)) [3] consists of videos that were manually collected from YouTube with a fixed resolution of 240x320 pixels. This dataset is very challenging due to large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc. 
 
+
+
+
 ---
 ## Results
 
 Below we present the main results achieved when using 
 
 ### DogCentric Dataset
+
+![DOG_V3-RGB](images/DOG_V3-RGB.png)
+![DOG_V3-OFL](images/DOG_V3-OFL.png)
+![DOG_V3-FC-LRCN](images/DOG_V3-FC-LRCN.png)
+![DOG_V3-CONV-LRCN](images/DOG_V3-CONV-LRCN.png)
+![DOG_VGG16-FC-LRCN](images/DOG_VGG16-FC-LRCN.png)
+![DOG_VGG16-CONV-LRCN](images/DOG_VGG16-CONV-LRCN.png)
+
+### KSCGR
+
+![KSCGR_V3-RGB](images/KSCGR_V3-RGB.png)
+![KSCGR_V3-OFL](images/KSCGR_V3-OFL.png)
+![KSCGR_V3-FC-LRCN](images/KSCGR_V3-FC-LRCN.png)
+![KSCGR_V3-CONV-LRCN](images/KSCGR_V3-CONV-LRCN.png)
+![KSCGR_VGG16-CONV-LRCN](images/KSCGR_VGG16-CONV-LRCN.png)
+
+### UCF-11 
+
+![UCF11_V3-RGB](images/UCF11_V3-RGB.png)
+![UCF11_V3-OFL](images/UCF11_V3-OFL.png)
+![UCF11_V3-FC-LRCN](images/UCF11_V3-FC-LRCN.png)
+![UCF11_V3-CONV-LRCN](images/UCF11_V3-CONV-LRCN.png)
+![UCF11_VGG16-CONV-LRCN](images/UCF11_VGG16-CONV-LRCN.png)
+
+
 
 ---
 ## How to cite
