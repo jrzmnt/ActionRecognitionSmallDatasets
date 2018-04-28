@@ -13,7 +13,24 @@ Action recognition is the computer vision task of identifying what action is hap
 ---
 ## Models
 
-Models' description
+In this work we tested serveral deep networks configurations. The names used in the paper are as follows:
+
+- V3-RGB: Inception-V3 network using raw RGB images in the input.
+- V3-OF: Inception-V3 network using optical flow images in the input.
+- V3[FC]-LRCN: LSTM fed with the features extracted from the fully connected layer of the Inception-V3 network.
+- V3[CONV]-LRCN: LSTM fed with the features extracted from the last convolutional layer of the Inception-V3 network.
+- V3[FC]-SVM: Support Vector Machine fed with the features extracted from the fully connected layer of the Inception-V3 network.
+- V3[CONV]-SVM: Support Vector Machine fed with the features extracted from the last convolutional layer of the Inception-V3 network.
+- V3-2STREAM(CONCAT): Two-stream architecture that uses an Inception-V3 fed with raw RGB and optical flow image data with the fusion layer using the concatenation of the features of both streams.
+- V3-2STREAM(MEAN): Two-stream architecture that uses an Inception-V3 fed with raw RGB and optical flow image data with the fusion layer using the mean of the features of both streams.
+- VGG16-RGB: VGG-16 network using raw RGB images in the input.
+- VGG16-OF: VGG-16 network using optical flow images in the input.
+- VGG16[FC]-LRCN: LSTM fed with the features extracted from the fully connected layer of the VGG-16 network.
+- VGG16[CONV]-LRCN: LSTM fed with the features extracted from the last convolutional layer of the VGG-16 network.
+- VGG16[FC]-SVM: Support Vector Machine fed with the features extracted from the fully connected layer of the VGG-16 network.
+- VGG16[CONV]-SVM: Support Vector Machine fed with the features extracted from the last convolutional layer of the VGG-16 network.
+- VGG16-2STREAM(CONCAT): Two-stream architecture that uses an VGG-16 fed with raw RGB and optical flow image data with the fusion layer using the concatenation of the features of both streams.
+- VGG16-2STREAM(MEAN): Two-stream architecture that uses an VGG-16 fed with raw RGB and optical flow image data with the fusion layer using the mean of the features of both streams.
 
 
 ---
@@ -31,7 +48,7 @@ The Kitchen Scene Context based Gesture Recognition dataset ([KSCGR](http://www.
 
 ### UCF-11 
 
-UCF YouTube Action Dataset ([UCF-11](http://crcv.ucf.edu/data/UCF_YouTube_Action.php) [3] consists of videos that were manually collected from YouTube with a fixed resolution of 240x320 pixels. This dataset is very challenging due to large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc. 
+UCF YouTube Action Dataset ([UCF-11](http://crcv.ucf.edu/data/UCF_YouTube_Action.php)) [3] consists of videos that were manually collected from YouTube with a fixed resolution of 240x320 pixels. This dataset is very challenging due to large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc. 
 
 ---
 ## Results
