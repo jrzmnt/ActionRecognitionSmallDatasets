@@ -17,12 +17,33 @@ Models' description
 
 
 ---
+## Experiments
+
+In this work we analyze the performance of algorithms for action recognition using deep learning in small datasets (ranging from a few thousand videos to hundreds of thousands). Each selected dataset differs from others by means of characteristics such as images recorded with a static/dynamic camera, egocentric/third-person view of the camera, *etc*.
+
+### DogCentric dataset
+
+The DogCentric Activity dataset ([DogCentric](http://robotics.ait.kyushu-u.ac.jp/~yumi/db/first_dog.html)) [^1] consists of first-person videos with outdoor scenes of wearable cameras mounted on dogs' back. 
+
+### KSCGR
+
+The Kitchen Scene Context based Gesture Recognition dataset ([KSCGR](http://www.murase.m.is.nagoya-u.ac.jp/KSCGR/)) is a fine-grained kitchen action dataset released as a challenge in [ICPR 2012](http://www.icpr2012.org/).
+
+### UCF-11 
+
+UCF YouTube Action Dataset ([UCF-11](http://crcv.ucf.edu/data/UCF_YouTube_Action.php) consists of videos that were manually collected from YouTube with a fixed resolution of 240x320 pixels. This dataset is very challenging due to large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc. 
+
+---
 ## Results
 
-Results here (tables, plots, etc)
+Below we present the main results achieved when using 
+
+### DogCentric Dataset
 
 ---
 ## How to cite
+
+When citing our work in academic papers, please use this BibTeX entry:
 
 ```
 @inproceedings{MonteiroEtAl2018,
@@ -35,3 +56,10 @@ Results here (tables, plots, etc)
   publisher = {IEEE}
 }
 ```
+
+
+
+---
+References
+
+[^1]: Iwashita, Yumi and Takamine, Asamichi and Kurazume, Ryo and Ryoo, Michael S. [First-Person Animal Activity Recognition from Egocentric Videos](http://dx.doi.org/10.1109/ICPR.2014.739). Proceedings of the 22nd International Conference on Pattern Recognition (ICPR'14), Stockholm, Sweden, pp. 4310-4315, IEEE, 2014. 
