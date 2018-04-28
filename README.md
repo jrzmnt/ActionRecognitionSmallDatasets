@@ -23,15 +23,15 @@ In this work we analyze the performance of algorithms for action recognition usi
 
 ### DogCentric dataset
 
-The DogCentric Activity dataset ([DogCentric](http://robotics.ait.kyushu-u.ac.jp/~yumi/db/first_dog.html)) [^1] consists of first-person videos with outdoor scenes of wearable cameras mounted on dogs' back. 
+The DogCentric Activity dataset ([DogCentric](http://robotics.ait.kyushu-u.ac.jp/~yumi/db/first_dog.html)) [1] consists of first-person videos with outdoor scenes of wearable cameras mounted on dogs' back. 
 
 ### KSCGR
 
-The Kitchen Scene Context based Gesture Recognition dataset ([KSCGR](http://www.murase.m.is.nagoya-u.ac.jp/KSCGR/)) is a fine-grained kitchen action dataset released as a challenge in [ICPR 2012](http://www.icpr2012.org/).
+The Kitchen Scene Context based Gesture Recognition dataset ([KSCGR](http://www.murase.m.is.nagoya-u.ac.jp/KSCGR/)) [2] is a fine-grained kitchen action dataset released as a challenge in [ICPR 2012](http://www.icpr2012.org/).
 
 ### UCF-11 
 
-UCF YouTube Action Dataset ([UCF-11](http://crcv.ucf.edu/data/UCF_YouTube_Action.php) consists of videos that were manually collected from YouTube with a fixed resolution of 240x320 pixels. This dataset is very challenging due to large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc. 
+UCF YouTube Action Dataset ([UCF-11](http://crcv.ucf.edu/data/UCF_YouTube_Action.php) [3] consists of videos that were manually collected from YouTube with a fixed resolution of 240x320 pixels. This dataset is very challenging due to large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc. 
 
 ---
 ## Results
@@ -62,4 +62,6 @@ When citing our work in academic papers, please use this BibTeX entry:
 ---
 References
 
-[^1]: Iwashita, Yumi and Takamine, Asamichi and Kurazume, Ryo and Ryoo, Michael S. [First-Person Animal Activity Recognition from Egocentric Videos](http://dx.doi.org/10.1109/ICPR.2014.739). Proceedings of the 22nd International Conference on Pattern Recognition (ICPR'14), Stockholm, Sweden, pp. 4310-4315, IEEE, 2014. 
+[1] Iwashita, Yumi and Takamine, Asamichi and Kurazume, Ryo and Ryoo, Michael S. [First-Person Animal Activity Recognition from Egocentric Videos](http://dx.doi.org/10.1109/ICPR.2014.739). Proceedings of the 22nd International Conference on Pattern Recognition (ICPR'14), Stockholm, Sweden, pp. 4310-4315, IEEE, 2014. 
+[2] Shimada, Atsushi and Kondo, Kazuaki and Deguchi, Daisuke and Morin, Géraldine and Stern, Helman. [Kitchen Scene Context Based Gesture Recognition: A Contest in ICPR2012](http://dx.doi.org/10.1007/978-3-642-40303-3_18). Revised Selected and Invited Papers of the International Workshop on Advances in Depth Image Analysis and Applications - Volume 7854 (WDIA'12), Tsukuba, Japan, pp. 168-185, Springer-Verlag, 2013.
+[3] Liu, Jingen and Luo, Jiebo and Shah, Mubarak. [Recognizing Realistic Actions from Videos "in the Wild"](https://doi.org/10.1109/CVPR.2009.5206744). Proceedings of the 2009 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'09), Miami, FL, USA, pp. 1996-2003, IEEE, 2009.
