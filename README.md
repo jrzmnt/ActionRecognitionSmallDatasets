@@ -15,9 +15,9 @@ Action recognition is the computer vision task of identifying what action is hap
 
 In this work we test serveral deep networks configurations. Each network is described below:
 
-**VGG16**: The VGG networks [1](#references) developed by the  Visual Geometry Group (VGG) from Oxford contains 16 weight layers divided in groups of convolutions using 3x3 filters in each convolutional layer.  
-**Inception-v3**: Google's Inception-V3 [2] (hereafter called V3) is a 48-layers deep Convolutional Neural Network based on *inception* modules that contain convolutional filters with a number of different dimensionalities running in parallel, covering different clusters of information.  
-**Two-Stream Network**: Proposed by Simonyan and Zisserman [3], the network computes two separated recognition streams (a spatial containing still images and a temporal containing the motion performed in a sequence of images). Both networks are merged by late fusion, where the prediction scores are combined by concatenation or by the mean.  
+**VGG16**: The VGG networks [[1](#references)] developed by the  Visual Geometry Group (VGG) from Oxford contains 16 weight layers divided in groups of convolutions using 3x3 filters in each convolutional layer.  
+**Inception-v3**: Google's Inception-V3 [[2](#references)] (hereafter called V3) is a 48-layers deep Convolutional Neural Network based on *inception* modules that contain convolutional filters with a number of different dimensionalities running in parallel, covering different clusters of information.  
+**Two-Stream Network**: Proposed by Simonyan and Zisserman [[3](#references)], the network computes two separated recognition streams (a spatial containing still images and a temporal containing the motion performed in a sequence of images). Both networks are merged by late fusion, where the prediction scores are combined by concatenation or by the mean.  
 The configuration of each network and the names we adopted in the paper are presented as follows:
 
 | Network                      | Description                                                                                                                                                                   |
@@ -49,15 +49,15 @@ In this work we analyze the performance of algorithms for action recognition usi
 
 ### DogCentric dataset
 
-The DogCentric Activity dataset ([DogCentric](http://robotics.ait.kyushu-u.ac.jp/~yumi/db/first_dog.html)) [4] consists of first-person videos with outdoor scenes of wearable cameras mounted on dogs' back. 
+The DogCentric Activity dataset ([DogCentric](http://robotics.ait.kyushu-u.ac.jp/~yumi/db/first_dog.html)) [[4](#references)] consists of first-person videos with outdoor scenes of wearable cameras mounted on dogs' back. 
 
 ### KSCGR
 
-The Kitchen Scene Context based Gesture Recognition dataset ([KSCGR](http://www.murase.m.is.nagoya-u.ac.jp/KSCGR/)) [5] is a fine-grained kitchen action dataset released as a challenge in [ICPR 2012](http://www.icpr2012.org/).
+The Kitchen Scene Context based Gesture Recognition dataset ([KSCGR](http://www.murase.m.is.nagoya-u.ac.jp/KSCGR/)) [[5](#references)] is a fine-grained kitchen action dataset released as a challenge in [ICPR 2012](http://www.icpr2012.org/).
 
 ### UCF-11 
 
-UCF YouTube Action Dataset ([UCF-11](http://crcv.ucf.edu/data/UCF_YouTube_Action.php)) [6] consists of videos that were manually collected from YouTube with a fixed resolution of 240x320 pixels. This dataset is very challenging due to large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc. 
+UCF YouTube Action Dataset ([UCF-11](http://crcv.ucf.edu/data/UCF_YouTube_Action.php)) [[6](#references)] consists of videos that were manually collected from YouTube with a fixed resolution of 240x320 pixels. This dataset is very challenging due to large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc. 
 
 
 
