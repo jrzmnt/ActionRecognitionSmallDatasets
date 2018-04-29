@@ -15,8 +15,8 @@ Action recognition is the computer vision task of identifying what action is hap
 
 In this work we test serveral deep networks configurations. Each network is described below:
 
-**VGG16**: The VGG networks [1] developed by the  Visual Geometry Group (VGG) from Oxford contains 16 weight layers divided in groups of convolutions using 3x3 filters in each convolutional layer.  
-**Inception-v3**}: Google's Inception-V3 [2] (hereafter called V3) is a 48-layers deep Convolutional Neural Network based on *inception* modules that contain convolutional filters with a number of different dimensionalities running in parallel, covering different clusters of information.  
+**VGG16**: The VGG networks [1](#references) developed by the  Visual Geometry Group (VGG) from Oxford contains 16 weight layers divided in groups of convolutions using 3x3 filters in each convolutional layer.  
+**Inception-v3**: Google's Inception-V3 [2] (hereafter called V3) is a 48-layers deep Convolutional Neural Network based on *inception* modules that contain convolutional filters with a number of different dimensionalities running in parallel, covering different clusters of information.  
 **Two-Stream Network**: Proposed by Simonyan and Zisserman [3], the network computes two separated recognition streams (a spatial containing still images and a temporal containing the motion performed in a sequence of images). Both networks are merged by late fusion, where the prediction scores are combined by concatenation or by the mean.  
 The configuration of each network and the names we adopted in the paper are presented as follows:
 
