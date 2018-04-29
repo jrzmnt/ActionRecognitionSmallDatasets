@@ -13,10 +13,15 @@ Action recognition is the computer vision task of identifying what action is hap
 ---
 ## Models
 
-In this work we tested serveral deep networks configurations. The names used in the paper are as follows:
+In this work we test serveral deep networks configurations. Each network is described below:
 
-| Network               | Description                                                                                                                                                                   |
-| :-------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+**VGG16**: The VGG networks [1] developed by the  Visual Geometry Group (VGG) from Oxford contains 16 weight layers divided in groups of convolutions using 3x3 filters in each convolutional layer.  
+**Inception-v3**}: Google's Inception-V3 [2] (hereafter called V3) is a 48-layers deep Convolutional Neural Network based on *inception* modules that contain convolutional filters with a number of different dimensionalities running in parallel, covering different clusters of information.  
+**Two-Stream Network**: Proposed by Simonyan and Zisserman [3], the network computes two separated recognition streams (a spatial containing still images and a temporal containing the motion performed in a sequence of images). Both networks are merged by late fusion, where the prediction scores are combined by concatenation or by the mean.  
+The configuration of each network and the names we adopted in the paper are presented as follows:
+
+| Network                      | Description                                                                                                                                                                   |
+| :--------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | V3&#x2011;RGB                | Inception-V3 network using raw RGB images in the input.                                                                                                                       |
 | V3&#x2011;OF                 | Inception-V3 network using optical flow images in the input.                                                                                                                  |
 | V3[FC]&#x2011;LRCN           | LSTM fed with the features extracted from the fully connected layer of the Inception-V3 network.                                                                              |
@@ -44,15 +49,15 @@ In this work we analyze the performance of algorithms for action recognition usi
 
 ### DogCentric dataset
 
-The DogCentric Activity dataset ([DogCentric](http://robotics.ait.kyushu-u.ac.jp/~yumi/db/first_dog.html)) [1] consists of first-person videos with outdoor scenes of wearable cameras mounted on dogs' back. 
+The DogCentric Activity dataset ([DogCentric](http://robotics.ait.kyushu-u.ac.jp/~yumi/db/first_dog.html)) [4] consists of first-person videos with outdoor scenes of wearable cameras mounted on dogs' back. 
 
 ### KSCGR
 
-The Kitchen Scene Context based Gesture Recognition dataset ([KSCGR](http://www.murase.m.is.nagoya-u.ac.jp/KSCGR/)) [2] is a fine-grained kitchen action dataset released as a challenge in [ICPR 2012](http://www.icpr2012.org/).
+The Kitchen Scene Context based Gesture Recognition dataset ([KSCGR](http://www.murase.m.is.nagoya-u.ac.jp/KSCGR/)) [5] is a fine-grained kitchen action dataset released as a challenge in [ICPR 2012](http://www.icpr2012.org/).
 
 ### UCF-11 
 
-UCF YouTube Action Dataset ([UCF-11](http://crcv.ucf.edu/data/UCF_YouTube_Action.php)) [3] consists of videos that were manually collected from YouTube with a fixed resolution of 240x320 pixels. This dataset is very challenging due to large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc. 
+UCF YouTube Action Dataset ([UCF-11](http://crcv.ucf.edu/data/UCF_YouTube_Action.php)) [6] consists of videos that were manually collected from YouTube with a fixed resolution of 240x320 pixels. This dataset is very challenging due to large variations in camera motion, object appearance and pose, object scale, viewpoint, cluttered background, illumination conditions, etc. 
 
 
 
@@ -98,6 +103,9 @@ When citing our work in academic papers, please use this BibTeX entry:
 ---
 ## References
 
-[1] Iwashita, Yumi and Takamine, Asamichi and Kurazume, Ryo and Ryoo, Michael S. [First-Person Animal Activity Recognition from Egocentric Videos](http://dx.doi.org/10.1109/ICPR.2014.739). Proceedings of the 22nd International Conference on Pattern Recognition (ICPR'14), Stockholm, Sweden, pp. 4310-4315, IEEE, 2014.  
-[2] Shimada, Atsushi and Kondo, Kazuaki and Deguchi, Daisuke and Morin, Géraldine and Stern, Helman. [Kitchen Scene Context Based Gesture Recognition: A Contest in ICPR2012](http://dx.doi.org/10.1007/978-3-642-40303-3_18). Revised Selected and Invited Papers of the International Workshop on Advances in Depth Image Analysis and Applications - Volume 7854 (WDIA'12), Tsukuba, Japan, pp. 168-185, Springer-Verlag, 2013.  
-[3] Liu, Jingen and Luo, Jiebo and Shah, Mubarak. [Recognizing Realistic Actions from Videos "in the Wild"](https://doi.org/10.1109/CVPR.2009.5206744). Proceedings of the 2009 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'09), Miami, FL, USA, pp. 1996-2003, IEEE, 2009.  
+[1] Simonyan, Karen and Zisserman, Andrew. [Very deep convolutional networks for large-scale image recognition](https://arxiv.org/pdf/1409.1556). Proceedings of the International Conference on Learning Representations (ICLR'15). San Diego, USA, 2015.  
+[2] Szegedy, Christian and Vanhoucke, Vincent and Ioffe, Sergey and Shlens, Jon and Wojna, Zbigniew. [Rethinking the Inception Architecture for Computer Vision](https://doi.org/10.1109/CVPR.2016.308). Proceedings of the 2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR'16). Las Vegas, NV, USA, pp. 2818-2826, IEEE, 2016.  
+[3] Simonyan, Karen and Zisserman, Andrew. [Two-stream Convolutional Networks for Action Recognition in Videos](http://dl.acm.org/citation.cfm?id=2968826.2968890). Proceedings of the 27th International Conference on Neural Information Processing Systems (NIPS'14). Montreal, Canada, pp. 568-576, MIT Press, 2014.  
+[4] Iwashita, Yumi and Takamine, Asamichi and Kurazume, Ryo and Ryoo, Michael S. [First-Person Animal Activity Recognition from Egocentric Videos](http://dx.doi.org/10.1109/ICPR.2014.739). Proceedings of the 22nd International Conference on Pattern Recognition (ICPR'14), Stockholm, Sweden, pp. 4310-4315, IEEE, 2014.  
+[5] Shimada, Atsushi and Kondo, Kazuaki and Deguchi, Daisuke and Morin, Géraldine and Stern, Helman. [Kitchen Scene Context Based Gesture Recognition: A Contest in ICPR2012](http://dx.doi.org/10.1007/978-3-642-40303-3_18). Revised Selected and Invited Papers of the International Workshop on Advances in Depth Image Analysis and Applications - Volume 7854 (WDIA'12), Tsukuba, Japan, pp. 168-185, Springer-Verlag, 2013.  
+[6] Liu, Jingen and Luo, Jiebo and Shah, Mubarak. [Recognizing Realistic Actions from Videos "in the Wild"](https://doi.org/10.1109/CVPR.2009.5206744). Proceedings of the 2009 IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR'09), Miami, FL, USA, pp. 1996-2003, IEEE, 2009.  
