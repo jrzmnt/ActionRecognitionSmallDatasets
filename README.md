@@ -73,11 +73,11 @@ To see tables and plots containing the results achieved using the DogCentric dat
 
 ### KSCGR
 
-To see tables and plots containing the results achieved using the DogCentric dataset, click [here](results_kscgr.md).
+To see tables and plots containing the results achieved using the KSCGR dataset, click [here](results_kscgr.md).
 
 ### UCF-11 
 
-To see tables and plots containing the results achieved using the DogCentric dataset, click [here](results_ucf11.md).
+To see tables and plots containing the results achieved using the UCF-11 dataset, click [here](results_ucf11.md).
 
 
 
