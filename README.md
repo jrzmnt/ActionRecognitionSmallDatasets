@@ -88,13 +88,17 @@ When citing our work in academic papers, please use this BibTeX entry:
 
 ```
 @inproceedings{MonteiroEtAl2018,
-  author    = {Monteiro, Juarez and Granada, Roger and Aires, Jo{\~a}o P and Barros, Rodrigo C},
+  author    = {Monteiro, Juarez and Granada, Roger and Aires, Jo{\~a}o P and Barros, Rodrigo},
   title     = {Evaluating the Feasibility of Deep Learning for Action Recognition in Small Datasets},
   booktitle = {Proceedings of the 2018 International Joint Conference on Neural Networks},
   series    = {IJCNN'18},
   location  = {Rio de Janeiro, Brazil},
+  pages     = {1596--1603},
+  isbn      = {978-1-5090-6014-6},
+  month     = {July},
   year      = {2018},
-  publisher = {IEEE}
+  publisher = {IEEE},
+  address   = {Washington, DC, USA}
 }
 ```
 
